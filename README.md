@@ -2,33 +2,6 @@
 
 A full-stack web application for managing users with CRUD operations, search functionality, and sorting capabilities. Built with Node.js, Express, MongoDB, and vanilla JavaScript.
 
-## Features
-
-### Required Features ✅
-- **User Attributes**: Each user has User ID, First Name, Last Name, Email Address, and Age
-- **Add New User**: Create new users with form validation
-- **Edit User**: Modify existing user information
-- **Delete User**: Remove users with confirmation
-- **Alphabetical Sorting**: Sort users by any attribute in ascending or descending order
-- **Search Functionality**: Search users by first name and/or last name
-- **Database Persistence**: All data is stored in MongoDB Atlas and persists between sessions
-
-### Additional Features
-- Responsive design for mobile and desktop
-- Real-time search with debouncing
-- Professional styling and user interface
-- Error handling and validation
-- Auto-generated unique user IDs
-- Environment variable configuration for security
-
-## Technology Stack
-
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB Atlas
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **ODM**: Mongoose
-- **Environment**: dotenv
-
 ## Prerequisites
 
 Before running this application, make sure you have:
@@ -65,8 +38,6 @@ cp .env.example .env
 MONGODB_URI=mongodb+srv://your_username:your_password@cluster.mongodb.net/your_database
 PORT=3051
 ```
-
-**⚠️ Important**: Never commit the `.env` file to version control. It contains sensitive information and is already included in `.gitignore`.
 
 ### 4. Database Configuration
 
@@ -183,27 +154,5 @@ Example: `GET /api/users?search=john&sort=firstName&order=desc`
    - Make sure the `.env` file exists in the project root
    - Verify the file format (no spaces around the `=` sign)
    - Restart the server after changing environment variables
-
-## Assignment Requirements Checklist
-
-- ✅ User attributes: User ID, First Name, Last Name, Email, Age
-- ✅ Can add a new user
-- ✅ Can edit an existing user
-- ✅ Can delete a user
-- ✅ Can sort users alphabetically (ascending and descending) by multiple attributes
-- ✅ Can search users by first name and/or last name
-- ✅ Instructions on how to start the application
-- ✅ All users stored in MongoDB Atlas
-- ✅ Frontend makes proper API calls to Node.js server
-- ✅ Data persists between start/stop cycles
-- ✅ Clean and readable styling
-- ✅ Environment variables for security
-
-## Support
-
-If you encounter any issues or have questions about the application, please check:
-1. The console output for error messages
-2. Your MongoDB Atlas connection settings
-3. The troubleshooting section above
 
 For development questions, ensure all prerequisites are met and environment variables are properly configured.
