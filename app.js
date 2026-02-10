@@ -1,7 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
-//const dbURL = 'mongodb://localhost:27017/mtec';
-const dbURL = 'mongodb+srv://briellat029_db_user:oXgEP7AYGrF0PkJq@cluster0.fd3goyc.mongodb.net/mtech'; 
+require('dotenv').config();
+
+// Use environment variable for database URL, fallback to local MongoDB
+const dbURL = process.env.MONGODB_URI || 'mongodb://localhost:27017/mtec';
 
 const app = express();
 const port = process.env.PORT || 3051;
