@@ -31,13 +31,7 @@ npm install express mongoose dotenv
 1. Copy the environment template file:
 ```bash
 cp .env.example .env
-```
-
-2. Edit the `.env` file and add your MongoDB connection string:
-```
-MONGODB_URI=mongodb+srv://your_username:your_password@cluster.mongodb.net/your_database
-PORT=3051
-```
+''' 
 
 ### 4. Database Configuration
 
